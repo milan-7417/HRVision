@@ -1,0 +1,234 @@
+.stApp{
+    background:#F8FAFC;
+}
+
+/* Sidebar */
+
+[data-testid="stSidebar"]{
+    background:linear-gradient(180deg,#071b44,#0f3c88);
+}
+
+[data-testid="stSidebar"] *{
+    color:white;
+}
+
+/* Remove Streamlit menu */
+
+#MainMenu{
+visibility:hidden;
+}
+
+footer{
+visibility:hidden;
+}
+
+header{
+visibility:hidden;
+}
+
+/* Buttons */
+
+.stButton>button{
+
+background:#2563EB;
+color:white;
+
+border:none;
+
+padding:12px 28px;
+
+border-radius:10px;
+
+font-weight:600;
+
+font-size:16px;
+}
+
+.stButton>button:hover{
+
+background:#1d4ed8;
+
+transition:0.3s;
+
+}
+
+/* Main */
+
+h1{
+
+font-family:sans-serif;
+
+font-weight:700;
+
+}
+
+h3{
+
+color:#374151;
+
+}
+
+/* ===========================
+   KPI CARDS
+=========================== */
+
+.kpi-card{
+
+    background:#ffffff;
+    border-radius:18px;
+    padding:25px;
+
+    min-height:180px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:all .3s ease;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(37,99,235,.20);
+
+}
+
+.kpi-card .icon{
+
+    font-size:42px;
+    margin-bottom:10px;
+
+}
+
+.kpi-card h1{
+
+    margin:12px 0 8px 0;
+    font-size:48px;
+    color:#2563EB;
+}
+
+.kpi-card h4{
+
+    margin:0;
+    font-size:26px;
+    color:#1F2937;
+    font-weight:700;
+}
+
+/* Smooth animation */
+
+[data-testid="stVerticalBlock"]{
+    gap:1rem;
+}
+
+/* Card Hover */
+
+div[data-testid="stVerticalBlockBorderWrapper"]{
+
+    transition:all .35s ease;
+
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(37,99,235,.20);
+
+}
+
+/* Better Paragraph */
+
+p{
+
+    line-height:1.7;
+
+}
+
+/* Better Headers */
+
+h2{
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-weight:600;
+
+}
+
+.block-container{
+
+padding-top:2rem;
+
+padding-bottom:2rem;
+
+padding-left:3rem;
+
+padding-right:3rem;
+
+max-width:1450px;
+
+}
+
+/* Hide Streamlit default page navigation */
+
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+/* =====================================
+           KPI METRICS
+===================================== */
+
+div[data-testid="metric-container"]{
+
+    background:#ffffff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+}
+
+div[data-testid="metric-container"]:hover{
+
+    border:1px solid #2563EB;
+
+    box-shadow:0 18px 35px rgba(37,99,235,.18);
+
+    transition:.3s;
+
+}
+
+/* KPI Hover Effect */
+
+.st-key-emp_card,
+.st-key-attrition_card,
+.st-key-income_card,
+.st-key-age_card,
+.st-key-years_card{
+
+    transition:0.3s ease;
+
+}
+
+.st-key-emp_card:hover,
+.st-key-attrition_card:hover,
+.st-key-income_card:hover,
+.st-key-age_card:hover,
+.st-key-years_card:hover{
+
+    transform:translateY(-6px);
+
+}
+
